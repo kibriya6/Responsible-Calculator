@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head>  
+    <meta charset="UTF-8">  
+        <title>JavaScript Calculator</title>
+            <link rel="shortcut icon" type="image/png" href="favicon.png"> 
+            <link rel="stylesheet" type="text/css" href="style.css">   
+             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"><style type="text/css" id="dcoder_stylesheet">@charset "utf-8";/* CSS Document */*{margin: 0; padding: 0; box-sizing: border-box;}body{    font-family: arial;    display: flex;    justify-content: center;    align-items: center;    min-height: 100vh;    background: linear-gradient(45deg, #80ff80, #ff99ff);}.calculator{    position: relative;    display: grid;    grid-template-columns: auto auto auto auto;    grid-gap: 2px;    width: 400px;    height: 550px;    background: #636363;}.calculator .value{    grid-column: span 4;    font-size: 25px;    text-align: right;    border: none;    outline: none;    padding: 10px;}.calculator .num{    padding: 10px 0;    display: grid;    color: #fff;    font-size: 25px;    place-items: center;    background: #090428;}.calculator .plus{    grid-area: 3/4/6/5;    background: #cc00cc;}.calculator .clear{    background: #ff5c33;}.calculator .equal{    background: #0099ff;}.calculator span:active{    background: #66ff66;    color: #111;}@media screen and (max-width: 576px) {    body {        background: #00004d;    }    .calculator {        width: 100%;        margin: auto;        height: 100vh;    }} 
+</style></head><body> 
+                  <form action="" class="calculator" name="calc">      
+                     <input class="value" type="text" name="text" readonly>    
+                           <span class="num clear" onclick="document.calc.text.value = ''">c</span>     
+                              <span class="num" onclick="document.calc.text.value += '/'">/</span>      
+                                <span class="num" onclick="document.calc.text.value += '*'">X</span>   
+                                     <span class="num plus" onclick="document.calc.text.value += '+'">+</span>     
+                                        <span class="num" onclick="document.calc.text.value += '-'">-</span>      
+                                          <span class="num" onclick="document.calc.text.value += '7'">7</span>    
+            <span class="num" onclick="document.calc.text.value += '8'">8</span>       
+             <span class="num" onclick="document.calc.text.value += '9'">9</span>       
+              <span class="num" onclick="document.calc.text.value += '4'">4</span>       
+               <span class="num" onclick="document.calc.text.value += '5'">5</span>      
+                 <span class="num" onclick="document.calc.text.value += '6'">6</span>        
+                 <span class="num" onclick="document.calc.text.value += '1'">1</span>      
+                   <span class="num" onclick="document.calc.text.value += '2'">2</span>      
+                     <span class="num" onclick="document.calc.text.value += '3'">3</span>        <span class="num" onclick="document.calc.text.value += '0'">0</span>        <span class="num" onclick="document.calc.text.value += '00'">00</span>        <span class="num" onclick="document.calc.text.value += '.'">.</span>        <span class="num equal" onclick="document.calc.text.value = eval(calc.text.value)">=</span>    
+</form>
+    
+
+    
+</body></html>
